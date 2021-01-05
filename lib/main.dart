@@ -17,8 +17,8 @@ class stateless extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal,
       ),
-      body: Center(
-          child: Image.asset('assets/space.jpg'),
+      body: Container(
+        color: Colors.grey[400],
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('add'),
