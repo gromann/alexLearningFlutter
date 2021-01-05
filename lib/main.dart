@@ -18,11 +18,22 @@ class stateless extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal,
       ),
-      body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-        margin: EdgeInsets.all(10),
-        color: Colors.grey[400],
-        child: Text("Hier bin ich!"),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.baseline,
+        children: [
+          Text("Hier bin ich!"),
+          FlatButton(
+            onPressed: () {},
+            child: Text("Button!"),
+            color: Colors.lime[100],
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30),
+            child: Text("Container!"),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('add'),
