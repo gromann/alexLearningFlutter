@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() =>
@@ -18,7 +19,10 @@ class stateless extends StatelessWidget {
         backgroundColor: Colors.teal,
       ),
       body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        margin: EdgeInsets.all(10),
         color: Colors.grey[400],
+        child: Text("Hier bin ich!"),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('add'),
